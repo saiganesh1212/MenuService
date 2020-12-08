@@ -64,7 +64,7 @@ namespace MenuService
 
             loggerFactory.AddLog4Net();
             app.UseRouting();
-
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
